@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* CSS for navigation bar */
+.topnav {
+  overflow: hidden; 
+  padding: 4px;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(173, 141, 85);
+  border-radius: 4px;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(125, 97, 47);
+  border-radius: 4px;
+  color: white;
+}
+
+/* CSS for header */
+.header {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+
+/* CSS for text areas */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* CSS for submit button */
+input[type=submit] {
+  background-color: rgb(125, 97, 47);
+  color: whitesmoke;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Changes color when user hovers over submit button */
+input[type=submit]:hover {
+  background-color: rgb(173, 141, 85);
+}
+
+.ContactMessage {
+  padding: 20px;
+}
+
+/* CSS for container*/
+.container {
+  padding: 20px;
+}
+</style>
+</head>
+<body style="background-color: rgb(235, 215, 181)">
+
+  <div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="browse.php">Browse</a>
+    <a class="active" href="contactme.html">Contact Me</a>
+</div> 
+
+<div class="header">
+  <img src="Images/contactme_title.png" alt="contactme_title">
+</div>
+
+<div class="ContactMessage">
+  <h3>Contact me for questions, requests, etc.</h6>
+</div>
+
+<div class="container">
+  <form action="sendemail.php" method="GET">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+
+    <label for="email">Your Email</label>
+    <input type="text" id="email" name="email" placeholder="Email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+    <label for="text">Message</label>
+    <textarea id="text" name="text" placeholder="Write message here.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

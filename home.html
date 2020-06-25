@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* CSS for navigation bar */
+.topnav {
+  overflow: hidden;
+  padding: 4px;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(173, 141, 85);
+  border-radius: 4px;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(125, 97, 47);
+  border-radius: 4px;
+  color: white;
+}
+
+/* CSS for header */
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+/* CSS for picture*/
+.picture {
+  padding: 20px;
+  float: left;
+}
+
+/* CSS for container*/
+.container {
+  padding: 20px;
+}
+
+/* CSS for link */
+.container a[type="link"] {
+  color: black;
+  text-decoration: none;
+}
+.container a[type="link"]:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body style="background-color: rgb(235, 215, 181)">
+
+<div class="topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="browse.php">Browse</a>
+    <a href="contactme.html">Contact Me</a>
+</div> 
+
+<div class="header">
+    <img src="Images/home_title.png" alt="home_title">
+</div>
+
+<div class="picture">
+  <img src="Images/professional_picture.jpg" alt="professional_picture" width="250" height="362.5">
+</div>
+
+<div class="container">
+  <table stype="width:100%">
+    <tr>
+      <td>
+        <label type="label" for="name" style="font-weight: bold;">Name:</label>
+      </td>
+      <td>Angelina Romeo</td>
+    </tr>
+    <tr>
+      <td>
+        <label type="label" for="email" style="font-weight: bold;">Email:</label>
+      </td>
+      <td>angelinaromeo728@gmail.com</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <br>
+        <label type="label" for="git" style="font-weight: bold;">About Me:</label>
+        
+        <p>I make paintings as a hobby outside of work. I started painting when I was in middle school and 
+          gradually got better through time. I originally went to school to become a graphic designer, but 
+          changed proffessions right before school began. I'm now going to funeral school, but I still love 
+          to make paintings on the side as a hobby</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+</div>
+
+
+</body>
+</html>

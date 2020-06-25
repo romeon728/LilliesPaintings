@@ -1,0 +1,12 @@
+This list is a To-Do list for the developers:
+-----------------------------------------------------------------------------------------
+
+Implement a Database instead of manually dragging in pictures and manually
+creating .txt documents for the browse.php page.
+
+Create a Sign in page
+	You are able to log in as a customer or the owner. Since there will be no
+	employees we don't need anything for them.
+
+Create a purchase page so when the user clicks purchase on a painting they're 
+redirected to a purchase page
