@@ -10,6 +10,3 @@ Create a Sign in page
 
 Create a purchase page so when the user clicks purchase on a painting they're 
 redirected to a purchase page
-
-
-test new repository
